@@ -395,3 +395,161 @@ section{
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
 }
+
+/* PORJECTS SECTION */
+
+#project{
+    padding: 100px 0;
+}
+.project-heading h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.project-container{
+    display: flex;
+    justify-self:center;
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.project-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/projects-image.png') no-repeat center center/cover;
+    filter: blur(10px); /* Blurs the background image */
+    z-index: 1;
+}
+.project-text{
+    display: grid;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    border-radius: 8px;
+}
+.project-text h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.project-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.project-text i{
+    margin-top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        color: cornflowerblue;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-items a {
+        padding: 10px; /* Reduce padding for nav links */
+    }
+    .info-containt{
+        font-size: small;
+    }
+    .info-containt p{
+        display: none;
+    }
+    .main-btn {
+        justify-content: center;
+        display: flex;
+    }
+    .btn-cv {
+        border: 2px solid;
+        margin-top: 30px;
+        padding: 10px 25px;
+        cursor: pointer;
+        border-radius: 0%;
+        font-weight: 600;
+        color: white;
+        background-color: cornflowerblue;
+    }
+    .btn-project{
+        border: 2px solid;
+        margin-top: 30px;
+        padding: 10px 25px;
+        cursor: pointer;
+        border-radius: 0%;
+        font-weight: 600;
+        color: white;
+        background-color: cornflowerblue;
+    }
+    .image-photo{
+        width: 70%;
+    }
+    .about-col-1 img{
+        display: none;
+    }
+    .about-containt{
+        margin-left: 20px;
+    }
+    .row{
+        display: contents;
+    }
+    .sub-title{
+        display: flex;
+        justify-content: center;
+    }
+    .about-col-2 p{
+        display: block;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        line-height: normal;
+    }
+    .main-containt {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items */
+    }
+
+    .main-containt img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: row; /* Horizontal layout for tablets */
+    }
+
+    .main-containt {
+        flex-direction: row; /* Side-by-side layout for tablets */
+    }
+}
+
+/* Styles for larger devices */
+@media (min-width: 769px) {
+    .main-containt {
+        padding: 20px; /* More padding for larger screens */
+    }
+}
