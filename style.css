@@ -476,7 +476,7 @@ section{
     padding-top: 20px;
  }
  .info-containt h2{
-    font-size: large;
+    font-size: x-large;
  }
  .info-containt h1{
     font-size: xx-large;
@@ -510,6 +510,9 @@ section{
 .image-photo{
     justify-self: center;
 }
+.main-containt img {
+    margin-right: 0px;
+}
 .about-col-1 img{
     display: none;
 }
@@ -522,6 +525,7 @@ section{
     display: contents;
 }
 .about-col-2{
+    margin-right: 10px;
     margin-left: 10px;
     flex-basis: 0%;
 }
