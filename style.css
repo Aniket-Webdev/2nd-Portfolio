@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*  HEADER */
+header{
+    height: 20%;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+.logo{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 700;
+    margin-left: 20%;
+    display: flex;
+    padding: 23px;
+    width:fit-content;
+}
+.nav-items{
+    margin-right: 7%;
+    display: flex;
+    align-items: center;
+}
+.nav-items a{
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+    padding: 23px;   
+    text-decoration: none;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+.nav-items a:hover{
+    color: cornflowerblue;
+    border-bottom: 5px solid cornflowerblue;
+}
+/* MAIN CONTAINT */
+main {
+    display: flex;
+    padding: 25px 10%;
+    justify-content: center;
+    align-items: center;
+}
+.main-containt {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-containt{
+    padding-top: 100px;    
+}
+.info-containt h2{
+    margin-top: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: 100;
+}
+.info-containt h1{
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+.info-containt h3{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: xx-large;
+}
+.info-containt p{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding-right: 100px;
+    line-height: 30px;
+}
+.main-btn{
+    margin-top: 20px;
+}
+.btn-cv{
+    border: 2px solid;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn-cv:hover{
+    transition: .3s;
+    background-color: white;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+.btn-project{
+    border: 2px solid;
+    margin-left: 25px;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn-project:hover{
+    transition: .3s;
+    background-color: white;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+.main-containt img{
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 5px solid cornflowerblue;
+    height: 300px;
+    width: 300px;
+}
+
+/* About Section*/
+
+#about{
+    padding: 100px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    margin-left: 20%;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-col-2 p{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding-right: 100px;
+    line-height: 30px;
+}
+.tab-titles{
+    display: flex;
+    margin: 0 0 20px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.tab-containt b{
+    color: cornflowerblue;
+}
+.tab-containt p{
+    margin-top: 5px;
+}
+.tab-containt li{
+    margin-top: 25px;
+}
+
+/* Skills Section*/
+
+#skills{
+    padding: 50px 0;
+}
+#skills h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container1{
+    padding-top: 50px;
+}
+.container2{
+    padding-top: 50px;
+}
+.bar{
+    width: 400px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+.container1 h2{
+    border-bottom: 5px solid cornflowerblue;
+    display: flex;
+    justify-self: baseline;
+}
+.container2 h2{
+    border-bottom: 5px solid cornflowerblue;
+    display: flex;
+    justify-self: baseline;
+}
+.indfo {
+    font-size: 20px;
+    color: black;
+}
+.technical-bar .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bar .bar .progress-line span{
+    height: 100%;
+    background-color: cornflowerblue;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.js span{
+    width: 50%;
+}
+.progress-line.python span{
+    width: 30%;
+}
+.progress-line.react span{
+    width: 20%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.js span::after{
+    content: "50%";
+}
+.progress-line.python span::after{
+    content: "30%";
+}
+.progress-line.react span::after{
+    content: "20%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: black;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+.radial-bars{
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke: black;
+    stroke-width: 10;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear  forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: cornflowerblue;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 60;
+    }
+}
+
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 85;
+    }
+}
+
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 195;
+    }
+}
+
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 210;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    opacity: 0;
+}
+
+.progress-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+}
+
+/* PORJECTS SECTION */
+
+#project{
+    padding: 100px 0;
+}
+.project-heading h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.project-container{
+    display: flex;
+    justify-self:center;
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.project-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/projects-image.png') no-repeat center center/cover;
+    filter: blur(10px); /* Blurs the background image */
+    z-index: 1;
+}
+.project-text{
+    display: grid;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    border-radius: 8px;
+}
+.project-text h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.project-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.project-text i{
+    margin-top: 5px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+/* Styles for mobile devices */
+
+@media screen and (max-width: 500px) {
+ .logo{
+    margin-left: 0%;
+    padding: 20px;
+    font-family: math;
+ }
+ .nav-bar{
+    position: fixed;
+    display: contents;
+ }
+ .nav-items{
+    font-size: 10px;
+ }
+ main{
+    display: contents;
+ }
+ .info-containt{
+    margin-left: 20px;
+    padding-top: 20px;
+ }
+ .info-containt h2{
+    font-size: large;
+ }
+ .info-containt h1{
+    font-size: xx-large;
+ }
+ .info-containt h3{
+    font-size: x-large;
+ }
+ .main-containt{
+    padding-top: 0px;
+    display: contents;
+ }
+ .info-containt p{
+    display: none;
+ }
+ .btn-cv {
+    border: 2px solid;
+    padding: 15px 40px;
+    border-radius: 0%;
+    cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn-project{
+    border: 2px solid;
+    padding: 15px 40px;
+    border-radius: 0%;
+    cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
+}
+.image-photo{
+    justify-self: center;
+}
+.about-col-1 img{
+    display: none;
+}
+.sub-title{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: contents;
+}
+.about-col-2{
+    margin-left: 10px;
+    flex-basis: 0%;
+}
+.about-col-2 p {
+    text-align: justify;
+    margin-top: 15px;
+    line-height: normal;
+    padding-right: 0px;
+    font-size: 10px;
+}
+#skills{
+    padding: 0px;
+}
+#skills h1 {
+    font-size: 20px;
+}
+.container1{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.container1 .heading{
+    font-size: 15px;
+    border-bottom: 2px solid cornflowerblue;
+}
+.bar {
+    width: 300px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+section {
+    flex-direction: column;
+    display: flex;
+}
+.container2{
+    padding-top: 70px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.container2 .heading{
+    font-size: 15px;
+    border-bottom: 2px solid cornflowerblue;
+}
+.radial-bars {
+    padding-top: 20px;
+}
+.radial-bars .radial-bar {
+    width: 50%;
+    height: 150px;
+    position: relative;
+}
+.indfo{
+    font-size: 15px;
+}
+.radial-bar .text{
+    font-size: 15px;
+}
+#project {
+    padding: 50px 0;
+}
+.project-heading h2{
+    font-size: 20px;
+}
+.project-container{
+    margin-top: 20px;
+}
+.project-text h2 {
+    font-size: 30px;
+}
+.project-text p {
+    font-size: 15px;
+}
+}
