@@ -455,7 +455,7 @@ section{
 
 /* Styles for mobile devices */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
  .logo{
     margin-left: 0%;
     padding: 20px;
