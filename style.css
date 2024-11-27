@@ -472,6 +472,7 @@ section{
     display: contents;
  }
  .info-containt{
+    margin-right: 20px;
     margin-left: 20px;
     padding-top: 20px;
  }
@@ -507,11 +508,10 @@ section{
     color: white;
     background-color: cornflowerblue;
 }
-.image-photo{
-    justify-self: center;
-}
 .main-containt img {
+    display: flex;
     margin-right: 0px;
+    justify-self: center;
 }
 .about-col-1 img{
     display: none;
@@ -549,6 +549,7 @@ section{
 }
 .container1 .heading{
     font-size: 15px;
+    display: block;
     border-bottom: 2px solid cornflowerblue;
 }
 .bar {
@@ -567,6 +568,7 @@ section {
     font-size: 15px;
 }
 .container2 .heading{
+    display: block;
     font-size: 15px;
     border-bottom: 2px solid cornflowerblue;
 }
@@ -591,6 +593,7 @@ section {
     font-size: 20px;
 }
 .project-container{
+    justify-self: center;
     margin-top: 20px;
 }
 .project-text h2 {
