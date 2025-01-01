@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniket | Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body class="cal-body">
+  <div class="cal-container">
+    <h1 class="cal-text">ANIKET - CALCULATOR</h1>
+    <input type="text" id="display" readonly>
+    <div class="btn-cal">
+
+      <button class="btn-calculator" onclick="calculateValue = '';document.querySelector('#display').value = calculateValue;">C</button>
+
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '1'; document.querySelector('#display').value = calculateValue;">1</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '2';document.querySelector('#display').value = calculateValue;">2</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '+';document.querySelector('#display').value = calculateValue;">+</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '3';document.querySelector('#display').value = calculateValue;">3</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '4';document.querySelector('#display').value = calculateValue;">4</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '-';document.querySelector('#display').value = calculateValue;">-</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '5';document.querySelector('#display').value = calculateValue;">5</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '6';document.querySelector('#display').value = calculateValue;">6</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '*';document.querySelector('#display').value = calculateValue;">*</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '7';document.querySelector('#display').value = calculateValue;">7</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '8';document.querySelector('#display').value = calculateValue;">8</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '/';document.querySelector('#display').value = calculateValue;">/</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '9';document.querySelector('#display').value = calculateValue;">9</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '0';document.querySelector('#display').value = calculateValue;">0</button>
+      
+      <button class="btn-calculator" onclick="calculateValue = calculateValue + '.';document.querySelector('#display').value = calculateValue;">.</button>
+      
+      <button class="btn-calculator" onclick="let result = eval(calculateValue); document.querySelector('#display').value = result;">=</button>
+
+    </div>
+  </div>
+
+  <script>
+    let calculateValue = '';
+    document.querySelector('#display').value = calculateValue;
+  </script>
+</body>
+</html>
